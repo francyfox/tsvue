@@ -2,16 +2,24 @@
 .wrapper
   .main
     h3 Test
-    Scene
-      Box(:position="[0, 0, 5]")
+    #CanvasWrapper
+      canvas(width=400 height=200)
+
 </template>
 <script>
 
+require('/src/assets/js/canvas/CanvasEnv.js');
 import Vue from 'vue';
 import vb from 'vue-babylonjs';
 Vue.use(vb);
 
 export default {
-  name: "Profile"
+  name: "Profile",
+
+  data: function (){
+    return {
+      scene: 0
+    }
+  }
 }
 </script>
