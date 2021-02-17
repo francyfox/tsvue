@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #505f67;
+  font-weight: 400;
+  color: #dedbdb;
+  height: 100vh;
+}
+body #app {
+  padding: 20px;
+  margin: 60px auto;
+  background: rgba(255, 255, 255, 0.2);
+  max-width: 1200px;
+}
+body h1 {
+  font-size: 30px;
+  font-weight: bold;
+}
+body h2 {
+  font-size: 20px;
+}
+.nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.nav ul li {
+  width: 25%;
+  display: flex;
+  flex-grow: 1;
+}
+.nav ul li button {
+  margin: 0 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  font-size: 12px;
+}
+.nav ul li button a {
+  color: #fff;
+  width: 100%;
+  display: block;
+}
+#SelectRoofType .card-panel {
+  width: 100%;
+}
+#SelectRoofType .card-panel:hover {
+  box-shadow: 0 0 3px 3px rgba(127, 255, 212, 0.3);
+}
+#SelectRoofType img {
+  margin: 0 auto;
+  height: 62px;
+}
+._active {
+  box-shadow: 0 0 3px 3px #ff7f7f;
+  color: #fff;
+}
+.row button {
+  margin-left: 2px;
+  margin-right: 2px;
+}
+.pad {
+  max-width: 300px;
+  padding: 15px;
+}
+.pad input {
+  color: #fff;
+}
+#size span {
+  color: #fff;
+  background: #000;
+}
+.slide-left-enter-active,
+.slide-left-leave-active,
+.slide-right-enter-active,
+.slide-right-leave-active {
+  transition-duration: 0.5s;
+  transition-property: height, opacity, transform;
+  transition-timing-function: cubic-bezier(0.55, 0, 0.1, 1);
+  overflow: hidden;
+}
+.slide-left-enter,
+.slide-right-leave-active {
+  opacity: 0;
+  transform: translate(2em, 0);
+}
+.slide-left-leave-active,
+.slide-right-enter {
+  opacity: 0;
+  transform: translate(-2em, 0);
+}
+#CanvasWrapper canvas {
+  width: 400px;
+  height: 200px;
+  border: 3px solid black;
+  margin: 40px;
+}
